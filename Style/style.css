@@ -1,41 +1,70 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-  }
-  
-  h1 {
+}
+
+h1 {
     font-size: 2.5rem;
     margin-top: 2rem;
-  }
-  
-  #question {
+}
+
+#question {
     font-size: 1.5rem;
     margin: 2rem auto;
     max-width: 80%;
-  }
-  
-  button {
+}
+
+button {
     padding: 1rem 2rem;
     font-size: 1.2rem;
     margin: 1rem;
     border-radius: 5px;
     border: none;
     cursor: pointer;
-  }
-  
-  #yes {
+}
+
+#yes {
     background-color: #7fb069;
     color: white;
-  }
-  
-  #no {
+}
+
+#no {
     background-color: #c93756;
     color: white;
-  }
-  
-  #score {
+}
+
+#score {
     font-size: 1.2rem;
     margin: 2rem auto;
     max-width: 80%;
-  }
-  
+}
+
+img {
+    width: 30%;
+    height: 20%; /* Define a largura da imagem como 100% do tamanho do elemento pai */
+    /* Define a altura da imagem como automática, para manter a proporção original */
+    border: 2px solid #ccc; /* Adiciona uma borda de 2 pixels sólida de cor cinza claro */
+    padding: 5px; /* Adiciona um preenchimento de 5 pixels dentro da borda */
+    margin: 10px; /* Adiciona uma margem de 10 pixels ao redor da imagem */
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra à imagem */
+    filter: grayscale(
+        50%
+    ); /* Aplica um filtro de escala de cinza de 50% à imagem */
+    transition: all 0.3s ease-in-out; /* Adiciona uma transição suave a todas as propriedades */
+}
+
+img:hover {
+    transform: scale(
+        1.1
+    ); /* Quando a imagem é hover, aplica uma escala de 1.1 (10% maior) */
+    filter: grayscale(
+        0%
+    ); /* Quando a imagem é hover, remove o filtro de escala de cinza */
+}
+
+.div-inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
